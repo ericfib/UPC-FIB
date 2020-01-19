@@ -1,0 +1,56 @@
+1.
+    - Con el comando df podemos verlo. #df -T
+    - Con el comando df podemos verlo. #df -i
+    - Con el comando df podemos verlo. #df -h
+
+2.
+    - sl_pr -> soft/symbolic link
+    - hl_pr -> hard link
+
+    stat:
+
+    pr.txt => Nodo-i:4604484  Enlaces:2  fichero regular
+    sl_pr => Nodo-i:4604912  Enlaces:1  enlace simbólico
+    hl_pr => Nodo-i:4604484  Enlaces:2  fichero regular
+
+
+    cat -> sl_pr: "esto es una prueba" hl_pr: "esto es una prueba"
+
+    namei -> sl_pr: f: sl_pr                hl_pr: f: hl_pr
+                     l sl_pr -> pr.txt              - hl_pr
+                       - pr.txt
+    readlink -> sl_pr: pr.txt  hl_pr:
+
+    La diferencia en namei reside en que sl_pr es un enlace i hl_pr no
+
+    ------------------ rm pr.txt -------------------------------------
+    
+    stat:
+
+    sl_pr => Nodo-i:4604912 Enlaces:1 enlace simbólico
+    hl_pr => Nodo-i:4604484 Enlaces:1 fichero regular
+
+    diferencia en que hl_pr ha perdido un enlace, debido a que se ha eliminado pr.txt. sl_pr no lo ha perdido ya que al ser un enlace simbolico no reacciona si pasa algo asi.
+
+    cat -> sl_pr: no existe el archivo o el directorio
+    cat -> hl_pr: "esto es una prueba"
+        
+    namei -> sl_pr: f: sl_pr
+                     l sl_pr -> pr.txt
+                         pr.txt - No existe el fichero o el directorio
+    namei -> hl_pr: f: hl_pr
+                     - hl_pr
+
+    readlink -> sl_pr: pr.txt  hl_pr:
+
+    Hay diferencias porque sl_pr apunta a un archivo que ya no existe
+
+    
+
+
+
+
+
+
+
+

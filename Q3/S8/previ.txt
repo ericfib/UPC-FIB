@@ -1,0 +1,25 @@
+1.
+   mknod previ pipe
+   cat > previ2
+   cat < previ2
+
+2. 
+   No se pueden conectar los dos comandos cat desde terminales diferentes ya que una pipeline sin nombre solo se puede ejecutar con procesos del mismo "entorno"
+   Si se puede conecar en el mismo terminal ya que estan en el mismo "entorno", como procesos heredados
+
+3.
+   dup2 (4,0)
+   close (4)
+
+4.
+
+a) 
+   Crea un struct socketAddr, al que copia el string socketid (adreça)
+   Assigna a socket_fd un descriptor de tipus sock_stream, de domini AF_UNIX i amb protocol 0
+   Assigna o linqueja el socket de la adreça &socketaddr al file descriptor socket_fd.
+   Deixa a socket_fd en estat "bloquejat" o passiu mentre espera a una solicitud de conexio
+
+b)
+   Te el socket socket_fd creat anteriorment com a parametre
+   A l'instruccio accept, li passa el socket socket_fd com a parametre i comprova que s'hagi creat amb bind i estigui en mode d'espera. Fa servir una adreça que soliciti la connexio 
+   
