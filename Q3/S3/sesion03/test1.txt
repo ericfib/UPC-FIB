@@ -1,0 +1,62 @@
+4049 Padre
+4050 ./myPS3 Son
+4049 Padre
+4051 e Son
+4050 Padre
+4049 Padre
+4050 Padre
+4053 r Son
+4051 Padre
+4049 Padre
+4052 e Son
+4050 Padre
+4056 r Son
+4051 Padre
+4054 r Son
+4053 Padre
+4049 Padre
+4052 Padre
+4050 Padre
+4056 Padre
+4051 Padre
+4054 Padre
+4053 Padre
+4059 t Son
+4052 Padre
+4057 t Son
+4056 Padre
+4058 t Son
+4054 Padre
+4059 Padre
+4052 Padre
+4063 t Son
+4057 Padre
+4069 p Son
+4058 Padre
+4065 t Son
+4064 p Son
+4061 r Son
+4066 p Son
+4063 Padre
+4068 p Son
+4065 Padre
+4061 Padre
+4060 p Son
+4073 p Son
+4061 Padre
+4062 p Son
+4075 p Son
+4074 p Son
+4070 p Son
+4067 t Son
+4076 t Son
+4072 p Son
+4077 p Son
+4076 Padre
+4067 Padre
+4078 p Son
+4071 p Son
+4079 p Son
+4055 t Son
+4055 Padre
+4080 p Son

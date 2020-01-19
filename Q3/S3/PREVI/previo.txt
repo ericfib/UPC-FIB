@@ -1,0 +1,95 @@
+Eric Serrano
+
+1. mensajes:
+    Soy el proceso 2584
+    Soy el proceso 2585
+
+El proceso 2584 es el padre y es el único proceso que habia hasta el fork(), donde se crea el proceso 2585, y los dos procesos ejecutan la escritura.
+
+2. mensajes:
+    Antes del fork: Soy el proceso 2633
+    PADRE: Soy el proceso 2633
+    Los DOS: Soy el proceso 2633
+    HIJO: Soy el proceso 2634
+    Los DOS: Soy el proceso 2634
+
+El proceso 2633 es el padre y el 2634 es el hijo. El primer mensaje se escribe antes de crear el proceso 2634, y los dos siguientes se escriben antes de que se ejecute el hijo, que ya està creado pero esperando para ser ejecutado. 
+Cuando se esta ejecutado, dado que se le asigna un 0 al proceso hijo en el fork(), puede entrar en el caso 0. 
+
+3. mensajes:
+    Antes del fork: Soy el proceso 2652
+    PADRE: Soy el proceso 2652
+    Solo lo ejecuta el padre: Soy el proceso 2652
+    HIJO: Soy el proceso 2653
+
+El proceso 2652 es el padre y el 2653 el hijo. Se ejecutan así porque así lo manda el programa, aunque el mensaje del hijo es el último porque tiene un exit() al final que termina el proceso.
+
+
+4. mensajes:
+    Antes del fork: Soy el proceso 2366
+    PADRE: Soy el proceso 2366
+    Solo lo ejecuta el padre: Soy el proceso 2366
+    HIJO: Soy el proceso 2367
+    HIJO acaba: Soy el proceso 2367
+
+Padre: 2366, hijo: 2366. Se ejecutan en el orden que marca el programa, esperando a que el hijo este listo para ejecutarse. El final de la ejecucion lo marca el exit().
+
+5. mensajes:
+    Antes del fork: Soy el proceso 2381
+    PADRE: Soy el proceso 2381
+    HIJO: Soy el proceso 2382
+    HIJO:La variable_global vale A y la local a
+    PADRE:La variable_global vale A y la local a
+    Solo lo ejecuta el padre: Soy el proceso 2381
+
+Padre: 2381, hijo: 2382. Se ejecutan en el orden que marca el programa, haciendo pasadas por el switch dependiendo del proceso que este activo. El final de la ejecución lo marca el exit(). Al principio, los derechos de acceso a las variables los tiene el padre, y como el en fork() el hijo los hereda, el también los tiene.
+
+6. mensajes:
+    Antes del fork: Soy el proceso 2406
+    PADRE: Soy el proceso 2406
+    --------
+    HIJO: Soy el proceso 2407
+    --------
+    Solo lo ejecuta el padre: Soy el proceso 2558
+
+Padre: 2406, hijo: 2407. Podemos ver como el hijo y el padre escriben 100000 veces cada letra, y tanto al principio como al final se ven los momentos de antes y después de la ejecución del hijo.
+
+No podemos saberlo porque no sabemos en que orden ejecutara el sistema operativo los procesos.
+
+
+7. No compila porque no reconoce "variable_local", ya que no esta pasada como parametro (solucion al problema: hacer eso). No tiene nada que ver con procesos.
+
+8. Da el PID (2760) y ejecuta el comando "ls -l". El mensaje del proceso sale una sola vez debido a que el codigo se ve sustituido por la instrucción execlp.
+
+9. mensajes:
+    Soy el proceso: 2793
+    Soy el proceso 2793
+    Soy el proceso 2794
+
+La primera linea es la del ejemplo_exec2, el cual muta luego y cambia su codigo por el de ejemplo_exec1. La 2a linea corresponde al padre y la 3a al hijo que se genera en el ejecutable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
