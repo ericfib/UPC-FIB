@@ -1,0 +1,17 @@
+
+1. En /proc/[pid]/stat se encuentran los minor page fault y major page fault.
+	En cminflt y cmajflt.
+
+2. vmstat 1
+	Swap-in: si 
+	swap-out: so
+
+3. chmod +x nombrearchivo
+
+4. fib 10 -> 0.00s
+   fib 20 -> 0.00s
+   fib 30 -> 0.01s
+   fib 40 -> 0.69s
+   fib 50 -> acabat amb ctrl+c, 43s
+
+5. 39
