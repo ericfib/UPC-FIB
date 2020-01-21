@@ -1,2 +1,2 @@
 # UPC-FIB
-My college stuff 
+College stuff
