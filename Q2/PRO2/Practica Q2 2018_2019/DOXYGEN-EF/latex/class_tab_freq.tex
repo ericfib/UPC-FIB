@@ -1,0 +1,310 @@
+\hypertarget{class_tab_freq}{}\section{Referencia de la Clase Tab\+Freq}
+\label{class_tab_freq}\index{Tab\+Freq@{Tab\+Freq}}
+
+
+Representa una tabla de frecuencias de los carácteres de un idioma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tab_freq_a0e429dc751718b7fc1c6ad3e127a0f98}{Tab\+Freq} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_tab_freq_a9080ea66c71746520f33a542e56dabb0}{Tab\+Freq} (const \hyperlink{class_tab_freq}{Tab\+Freq} \&tf)
+\begin{DoxyCompactList}\small\item\em Creadora copiadora. \end{DoxyCompactList}\item 
+\hyperlink{class_tab_freq_a5e97d572cc5d1d46c6a16cf76e94c698}{$\sim$\+Tab\+Freq} ()
+\begin{DoxyCompactList}\small\item\em Destructora por defecto. \end{DoxyCompactList}\item 
+void \hyperlink{class_tab_freq_a78f5e7e73648d2a7ecc0bd28f4cbd4c0}{modifica} (int n)
+\begin{DoxyCompactList}\small\item\em Operación que modifica el parámetro implícito, añadiendo los pares que hagan falta. \end{DoxyCompactList}\item 
+map$<$ string, int $>$\+::iterator \hyperlink{class_tab_freq_a4c139f7774cf70aa67d354f7f4d3ae87}{inici} ()
+\begin{DoxyCompactList}\small\item\em Consultora que devuelve un iterador apuntando al inicio de la tabla. \end{DoxyCompactList}\item 
+map$<$ string, int $>$\+::iterator \hyperlink{class_tab_freq_acaa682bda54944915db86e012756cef8}{fi} ()
+\begin{DoxyCompactList}\small\item\em Consultora que devuelve un iterador apuntando al final de la tabla. \end{DoxyCompactList}\item 
+void \hyperlink{class_tab_freq_aa84cb3ed7c4958be0bfe4fbd8c6c0e6a}{read\+\_\+tab} (int n)
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_tab_freq_a20d75c460199ab8ef3e189d9ad81c05b}{print\+\_\+tab} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, int $>$ \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}
+\begin{DoxyCompactList}\small\item\em Estructura interna de la tabla de frecuencias de un idioma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una tabla de frecuencias de los carácteres de un idioma. 
+
+Unatabla de frecuencias es una estructura formada por los elementos del alfabeto de un idioma. Estos elementos son pares de strings y enteros, es decir, caracteres y sus frecuencias. 
+
+Definición en la línea 23 del archivo Tab\+Freq.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_tab_freq_a0e429dc751718b7fc1c6ad3e127a0f98}\label{class_tab_freq_a0e429dc751718b7fc1c6ad3e127a0f98}} 
+\index{Tab\+Freq@{Tab\+Freq}!Tab\+Freq@{Tab\+Freq}}
+\index{Tab\+Freq@{Tab\+Freq}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{Tab\+Freq()}{TabFreq()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tab\+Freq\+::\+Tab\+Freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una tabla de frecuencias. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una tabla de frecuencia vacía 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 9 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tab_freq_a9080ea66c71746520f33a542e56dabb0}\label{class_tab_freq_a9080ea66c71746520f33a542e56dabb0}} 
+\index{Tab\+Freq@{Tab\+Freq}!Tab\+Freq@{Tab\+Freq}}
+\index{Tab\+Freq@{Tab\+Freq}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{Tab\+Freq()}{TabFreq()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tab\+Freq\+::\+Tab\+Freq (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tab_freq}{Tab\+Freq} \&}]{tf }\end{DoxyParamCaption})}
+
+
+
+Creadora copiadora. 
+
+Permite declarar una tabla de frecuencias nueva como copia de otra ya existente. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una \hyperlink{class_tab_freq}{Tab\+Freq} igual que c 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de pares de c 
+\end{DoxyParagraph}
+
+
+Definición en la línea 11 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+11                                 \{
+12   \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF} = c.TF;
+13 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tab_freq_a5e97d572cc5d1d46c6a16cf76e94c698}\label{class_tab_freq_a5e97d572cc5d1d46c6a16cf76e94c698}} 
+\index{Tab\+Freq@{Tab\+Freq}!````~Tab\+Freq@{$\sim$\+Tab\+Freq}}
+\index{````~Tab\+Freq@{$\sim$\+Tab\+Freq}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{$\sim$\+Tab\+Freq()}{~TabFreq()}}
+{\footnotesize\ttfamily Tab\+Freq\+::$\sim$\+Tab\+Freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora por defecto. 
+
+Se ejecuta automáticamente cuando el objeto local sale del ámbito de visibilidad \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El objeto local se ha borrado en salir del àmbito de visibilidad 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 15 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_tab_freq_a78f5e7e73648d2a7ecc0bd28f4cbd4c0}\label{class_tab_freq_a78f5e7e73648d2a7ecc0bd28f4cbd4c0}} 
+\index{Tab\+Freq@{Tab\+Freq}!modifica@{modifica}}
+\index{modifica@{modifica}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{modifica()}{modifica()}}
+{\footnotesize\ttfamily void Tab\+Freq\+::modifica (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Operación que modifica el parámetro implícito, añadiendo los pares que hagan falta. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha modificado el parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal 
+\end{DoxyParagraph}
+
+
+Definición en la línea 17 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+17                            \{
+18   \textcolor{keywordtype}{string} key;
+19   \textcolor{keywordtype}{int} fr;
+20   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < n; i++)\{
+21     cin >> key >> fr;
+22     \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}[key] += fr;
+23   \}
+24 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tab_freq_a4c139f7774cf70aa67d354f7f4d3ae87}\label{class_tab_freq_a4c139f7774cf70aa67d354f7f4d3ae87}} 
+\index{Tab\+Freq@{Tab\+Freq}!inici@{inici}}
+\index{inici@{inici}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{inici()}{inici()}}
+{\footnotesize\ttfamily map$<$ string, int $>$\+::iterator Tab\+Freq\+::inici (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora que devuelve un iterador apuntando al inicio de la tabla. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve un iterador apuntando al inicio del parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 26 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+26                                       \{
+27   \textcolor{keywordflow}{return} \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}.begin();
+28 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tab_freq_acaa682bda54944915db86e012756cef8}\label{class_tab_freq_acaa682bda54944915db86e012756cef8}} 
+\index{Tab\+Freq@{Tab\+Freq}!fi@{fi}}
+\index{fi@{fi}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{fi()}{fi()}}
+{\footnotesize\ttfamily map$<$ string, int $>$\+::iterator Tab\+Freq\+::fi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora que devuelve un iterador apuntando al final de la tabla. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve un iterador apuntando al final del parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 30 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+30                                    \{
+31   \textcolor{keywordflow}{return} \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}.end();
+32 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tab_freq_aa84cb3ed7c4958be0bfe4fbd8c6c0e6a}\label{class_tab_freq_aa84cb3ed7c4958be0bfe4fbd8c6c0e6a}} 
+\index{Tab\+Freq@{Tab\+Freq}!read\+\_\+tab@{read\+\_\+tab}}
+\index{read\+\_\+tab@{read\+\_\+tab}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{read\+\_\+tab()}{read\_tab()}}
+{\footnotesize\ttfamily void Tab\+Freq\+::read\+\_\+tab (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha leído una tabla de n elementos por el canal de entrada estandar 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal en relación de cuantos elementos se lean 
+\end{DoxyParagraph}
+
+
+Definición en la línea 34 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+34                            \{
+35     \textcolor{keywordtype}{string} c;
+36     \textcolor{keywordtype}{int} fr;
+37     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < n; i++)\{
+38       cin >> c >> fr;
+39       \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}[c] += fr;
+40     \}
+41 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tab_freq_a20d75c460199ab8ef3e189d9ad81c05b}\label{class_tab_freq_a20d75c460199ab8ef3e189d9ad81c05b}} 
+\index{Tab\+Freq@{Tab\+Freq}!print\+\_\+tab@{print\+\_\+tab}}
+\index{print\+\_\+tab@{print\+\_\+tab}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{print\+\_\+tab()}{print\_tab()}}
+{\footnotesize\ttfamily void Tab\+Freq\+::print\+\_\+tab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe por el canal de salida estandar el parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal en relación a cuántos elementos tenga la tabla a imprimir 
+\end{DoxyParagraph}
+
+
+Definición en la línea 43 del archivo Tab\+Freq.\+cc.
+
+
+\begin{DoxyCode}
+43                              \{
+44   map<string,int>::const\_iterator it;
+45   \textcolor{keywordflow}{for}(it = \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}.begin(); it != \hyperlink{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}{TF}.end(); ++it)\{
+46       cout << (*it).first << \textcolor{stringliteral}{" "} << (*it).second << endl;
+47   \}
+48 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}\label{class_tab_freq_ae6be9a9671af1d897960648e10a62cfb}} 
+\index{Tab\+Freq@{Tab\+Freq}!TF@{TF}}
+\index{TF@{TF}!Tab\+Freq@{Tab\+Freq}}
+\subsubsection{\texorpdfstring{TF}{TF}}
+{\footnotesize\ttfamily map$<$string,int$>$ Tab\+Freq\+::\+TF\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estructura interna de la tabla de frecuencias de un idioma. 
+
+
+
+Definición en la línea 28 del archivo Tab\+Freq.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_tab_freq_8hh}{Tab\+Freq.\+hh}\item 
+\hyperlink{_tab_freq_8cc}{Tab\+Freq.\+cc}\end{DoxyCompactItemize}

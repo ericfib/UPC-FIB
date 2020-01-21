@@ -1,0 +1,708 @@
+\hypertarget{class_idioma}{}\section{Referencia de la Clase Idioma}
+\label{class_idioma}\index{Idioma@{Idioma}}
+
+
+Representa un idioma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_idioma_a6722a621ce03825772493e67e5a17215}{Idioma} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_idioma_a80c90f8c9a7f824d7d7d171b9face201}{$\sim$\+Idioma} ()
+\begin{DoxyCompactList}\small\item\em Destructora por defecto. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_ad29b4c109c3fd61d7753c3345c438694}{modificaridioma} (int n)
+\begin{DoxyCompactList}\small\item\em Modificadora del parámetro implícito. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a797cfc4dd3d423c41f46926a68410992}{ini\+\_\+decodifica} (string \&codi) const
+\begin{DoxyCompactList}\small\item\em Operación que inicia la decodificación de un código. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a23589aa5ba65f484e2477ed611ce151f}{buscacodi} (string key) const
+\begin{DoxyCompactList}\small\item\em Consultora del código de un carácter del parámetro implícito. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a035524146301a918ba0c019b25c10263}{codifica} (const string \&text) const
+\begin{DoxyCompactList}\small\item\em Operación que codifica el texto introducido. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a862b9fe26b8929a7d6b4af8a1373d0a0}{tabla} ()
+\begin{DoxyCompactList}\small\item\em Consultora de la tabla de frecuencias del parámetro implícito. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a62777b96c5fcdbcf3fa9a5ebafe45988}{print\+\_\+treecode} ()
+\begin{DoxyCompactList}\small\item\em Consultora del treecode del idioma. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a2b615f7b30362bfc20e6319835017031}{codigos} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura de los códigos del alfabeto del parámetro implícito. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_aaf85e226b876366ea2cb1ebf5cf04388}{tree\+\_\+pre} (const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&a)
+\begin{DoxyCompactList}\small\item\em Operación de escritura en preorden del treecode de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a1fdf7b5bae642b911ab51b100f56e55f}{tree\+\_\+in} (const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&a)
+\begin{DoxyCompactList}\small\item\em Operación de escritura en inorden del treecode del parámetro implícito. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a0a4599da90aef15aa798a63ee6ad820e}{lee\+\_\+idioma} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ Bin\+Tree$<$ pair$<$ string, int $>$ $>$ $>$ \hyperlink{class_idioma_aa4a86dd82c04a280b32d98c775cf5eda}{sethojas} (\hyperlink{class_tab_freq}{Tab\+Freq} \&tab)
+\begin{DoxyCompactList}\small\item\em Operación de creación de un conjunto de árboles de cada carácter del idioma. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}{create\+\_\+codigos} (const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&arbre, string \&codi)
+\begin{DoxyCompactList}\small\item\em Crea la lista de codigos del alfabeto de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_aa26f926dab1f528a879244f0a1c5f3e5}{create\+\_\+treecode} (set$<$ Bin\+Tree$<$ pair$<$ string, int $>$$>$$>$ \&s\+\_\+arbre)
+\begin{DoxyCompactList}\small\item\em Crea el treecode de un idioma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_idioma_a225fb55a6732d07e61bf310f5f29aa0e}{decodifica} (const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&arbre, string \&codi, int \&i)
+\begin{DoxyCompactList}\small\item\em Operación de decodificación de una linea de códigos de carácteres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tab_freq}{Tab\+Freq} \hyperlink{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}{taula}
+\begin{DoxyCompactList}\small\item\em Tabla de frecuencias del parametro implícito. \end{DoxyCompactList}\item 
+Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode}
+\begin{DoxyCompactList}\small\item\em Treecode del parámetro implícito. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}
+\begin{DoxyCompactList}\small\item\em Estructura para la lista de códigos de un idioma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un idioma. 
+
+Un idioma está formado por un string para su nombre y una tabla de frecuencias con todos los carácteres de ese idioma y la frecuencia con la que aparece cada uno. 
+
+Definición en la línea 24 del archivo idioma.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_idioma_a6722a621ce03825772493e67e5a17215}\label{class_idioma_a6722a621ce03825772493e67e5a17215}} 
+\index{Idioma@{Idioma}!Idioma@{Idioma}}
+\index{Idioma@{Idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{Idioma()}{Idioma()}}
+{\footnotesize\ttfamily Idioma\+::\+Idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un idioma. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Crea un idioma con el nombre y el numero de carácteres indicados 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 98 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+98 \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a80c90f8c9a7f824d7d7d171b9face201}\label{class_idioma_a80c90f8c9a7f824d7d7d171b9face201}} 
+\index{Idioma@{Idioma}!````~Idioma@{$\sim$\+Idioma}}
+\index{````~Idioma@{$\sim$\+Idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{$\sim$\+Idioma()}{~Idioma()}}
+{\footnotesize\ttfamily Idioma\+::$\sim$\+Idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora por defecto. 
+
+Se ejecuta automáticamente cuando el objeto local sale del ámbito de visibilidad \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El objeto local se ha borrado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 100 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+100 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_idioma_aa4a86dd82c04a280b32d98c775cf5eda}\label{class_idioma_aa4a86dd82c04a280b32d98c775cf5eda}} 
+\index{Idioma@{Idioma}!sethojas@{sethojas}}
+\index{sethojas@{sethojas}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{sethojas()}{sethojas()}}
+{\footnotesize\ttfamily set$<$ Bin\+Tree$<$ pair$<$ string, int $>$ $>$ $>$ Idioma\+::sethojas (\begin{DoxyParamCaption}\item[{\hyperlink{class_tab_freq}{Tab\+Freq} \&}]{tab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Operación de creación de un conjunto de árboles de cada carácter del idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se crea un conjunto de árboles que contienen un carácter del idioma cada uno 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo del número de carácteres 
+\end{DoxyParagraph}
+el iterador apunta al primer elemento de tab y se pone en el par carry, para luego crear un Bin\+Tree sin hijos con ese valor
+
+Definición en la línea 13 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+13                                                            \{
+14   set<BinTree<pair<string,int>>> conj;
+15   \hyperlink{class_tab_freq}{TabFreq} d(tab);
+16   \textcolor{comment}{//d ahora es igual a la tabla de frecuencias del idioma}
+17   map<string,int>::iterator ite = d.inici();
+18 
+24     pair<string,int> carry;
+25     \textcolor{keywordflow}{while}(ite != d.fi())\{
+26       carry.first = ite->first;
+27       carry.second = ite->second;
+28       BinTree<pair<string,int>> node(carry);
+29       conj.insert(node);
+30       ++ite;
+31     \}
+32     \textcolor{keywordflow}{return} conj;
+33 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a225fb55a6732d07e61bf310f5f29aa0e}\label{class_idioma_a225fb55a6732d07e61bf310f5f29aa0e}} 
+\index{Idioma@{Idioma}!decodifica@{decodifica}}
+\index{decodifica@{decodifica}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{decodifica()}{decodifica()}}
+{\footnotesize\ttfamily string Idioma\+::decodifica (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{arbre,  }\item[{string \&}]{codi,  }\item[{int \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Operación de decodificación de una linea de códigos de carácteres. 
+
+\begin{DoxyPrecond}{Precondición}
+0 $<$= i $<$= codi.\+length() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el código es correcto, se ha decodificado y se ha impreso el string correspondiente 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal 
+\end{DoxyParagraph}
+
+
+Definición en la línea 35 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+35                                                                                      \{
+36   \textcolor{keywordflow}{if} (i <= codi.length())\{
+37     \textcolor{keywordflow}{if} (arbre.left().empty()) \textcolor{keywordflow}{return} arbre.value().first;
+38     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (codi[i] == \textcolor{charliteral}{'0'}) \{
+39       i++;
+40       \textcolor{keywordflow}{return} \hyperlink{class_idioma_a225fb55a6732d07e61bf310f5f29aa0e}{decodifica}(arbre.left(),codi,i);
+41     \}
+42     \textcolor{keywordflow}{else}\{
+43       i++;
+44       \textcolor{keywordflow}{return} \hyperlink{class_idioma_a225fb55a6732d07e61bf310f5f29aa0e}{decodifica}(arbre.right(),codi,i);
+45     \}
+46   \}\textcolor{keywordflow}{else}\{
+47     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"no"};
+48   \}
+49 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}\label{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}} 
+\index{Idioma@{Idioma}!create\+\_\+codigos@{create\+\_\+codigos}}
+\index{create\+\_\+codigos@{create\+\_\+codigos}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{create\+\_\+codigos()}{create\_codigos()}}
+{\footnotesize\ttfamily void Idioma\+::create\+\_\+codigos (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{arbre,  }\item[{string \&}]{codi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea la lista de codigos del alfabeto de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+Codi es un string vacío 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Los codigos de cada carácter de un idioma se han creado y guardado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal en proporción a la cantidad de carácteres del idioma 
+\end{DoxyParagraph}
+
+
+Definición en la línea 51 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+51                                                                                \{
+52   \textcolor{keywordflow}{if}(arbre.left().empty()) \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}[arbre.value().first]=codi;
+53   \textcolor{keywordflow}{else}\{
+54     \textcolor{comment}{//string copia\_codi = codi;}
+55     \textcolor{keywordtype}{string} ret = codi+\textcolor{stringliteral}{"0"};
+56     \hyperlink{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}{create\_codigos}(arbre.left(), ret);
+57     ret = codi+\textcolor{stringliteral}{"1"};
+58     \hyperlink{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}{create\_codigos}(arbre.right(), ret);
+59   \}
+60 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_aa26f926dab1f528a879244f0a1c5f3e5}\label{class_idioma_aa26f926dab1f528a879244f0a1c5f3e5}} 
+\index{Idioma@{Idioma}!create\+\_\+treecode@{create\+\_\+treecode}}
+\index{create\+\_\+treecode@{create\+\_\+treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{create\+\_\+treecode()}{create\_treecode()}}
+{\footnotesize\ttfamily void Idioma\+::create\+\_\+treecode (\begin{DoxyParamCaption}\item[{set$<$ Bin\+Tree$<$ pair$<$ string, int $>$$>$$>$ \&}]{s\+\_\+arbre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea el treecode de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+s\+\_\+arbre contiene un conjunto con las hojas del treecode 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha creado el treecode del parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal 
+\end{DoxyParagraph}
+
+
+Definición en la línea 62 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+62                                                                    \{
+63   set<BinTree<pair<string,int>>>::iterator ite = s\_arbre.begin();
+64   \textcolor{keywordtype}{int} tam = s\_arbre.size();
+65   \textcolor{keywordflow}{while} (tam != 1)\{
+66     BinTree<pair<string,int>> l;  \textcolor{comment}{//left}
+67     pair<string,int> lp; \textcolor{comment}{//parell que tindra el valor de left}
+68     BinTree<pair<string,int>> r;  \textcolor{comment}{//right}
+69     pair<string,int> rp; \textcolor{comment}{//parell que tindra el valor de right}
+70 
+71     l = (*ite);
+72     lp = l.value();
+73     s\_arbre.erase(ite);
+74 
+75     ite = s\_arbre.begin();
+76 
+77     r = (*ite);
+78     rp = r.value();
+79     s\_arbre.erase(ite);
+80 
+81     pair<string,int> comb;
+82     \textcolor{keywordflow}{if} (lp.first <= rp.first) comb.first = lp.first + rp.first;
+83     \textcolor{keywordflow}{else} comb.first = rp.first + lp.first;
+84     comb.second = lp.second + rp.second;
+85 
+86     BinTree<pair<string,int>> aaa (comb, l, r);
+87     s\_arbre.insert(aaa);
+88     tam = s\_arbre.size();
+89     ite = s\_arbre.begin();
+90     \}
+91   ite = s\_arbre.begin();
+92   BinTree<pair<string,int>> arbre = (*ite);
+93   \hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode} = arbre;
+94 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_ad29b4c109c3fd61d7753c3345c438694}\label{class_idioma_ad29b4c109c3fd61d7753c3345c438694}} 
+\index{Idioma@{Idioma}!modificaridioma@{modificaridioma}}
+\index{modificaridioma@{modificaridioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{modificaridioma()}{modificaridioma()}}
+{\footnotesize\ttfamily void Idioma\+::modificaridioma (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Modificadora del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han modificado el parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo del proceso interno \char`\"{}modifica\char`\"{} 
+\end{DoxyParagraph}
+
+
+Definición en la línea 103 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+103                                  \{
+104   \hyperlink{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}{taula}.\hyperlink{class_tab_freq_a78f5e7e73648d2a7ecc0bd28f4cbd4c0}{modifica}(n);
+105   set<BinTree<pair<string,int>>> s\_arbre = \hyperlink{class_idioma_aa4a86dd82c04a280b32d98c775cf5eda}{sethojas}(\hyperlink{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}{taula});
+106   \hyperlink{class_idioma_aa26f926dab1f528a879244f0a1c5f3e5}{create\_treecode}(s\_arbre);
+107   \textcolor{keywordtype}{string} codis = \textcolor{stringliteral}{""};
+108   \hyperlink{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}{create\_codigos}(\hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode},codis);
+109 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a797cfc4dd3d423c41f46926a68410992}\label{class_idioma_a797cfc4dd3d423c41f46926a68410992}} 
+\index{Idioma@{Idioma}!ini\+\_\+decodifica@{ini\+\_\+decodifica}}
+\index{ini\+\_\+decodifica@{ini\+\_\+decodifica}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{ini\+\_\+decodifica()}{ini\_decodifica()}}
+{\footnotesize\ttfamily void Idioma\+::ini\+\_\+decodifica (\begin{DoxyParamCaption}\item[{string \&}]{codi }\end{DoxyParamCaption}) const}
+
+
+
+Operación que inicia la decodificación de un código. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha iniciado y acabado la decodificación del código 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 111 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+111                                              \{
+112   \textcolor{keywordtype}{string} result, a;
+113   \textcolor{keywordtype}{int} i = 0, i2 = 0;
+114   \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};
+115   \textcolor{keywordflow}{while} (ok and i < codi.length())\{
+116     a = \hyperlink{class_idioma_a225fb55a6732d07e61bf310f5f29aa0e}{decodifica}(\hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode},codi,i);
+117     \textcolor{keywordflow}{if} (a == \textcolor{stringliteral}{"no"}) ok = \textcolor{keyword}{false};
+118     \textcolor{keywordflow}{else}\{
+119       i2 = i;
+120       result += a;
+121     \}
+122   \}
+123   \textcolor{keywordflow}{if} (ok) cout << result << endl;
+124   \textcolor{keywordflow}{else}\{
+125     cout << \textcolor{stringliteral}{"El texto no procede de una codificacion del idioma;"};
+126     cout << \textcolor{stringliteral}{" ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: "} <<
+       i2 << endl;
+127   \}
+128 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a23589aa5ba65f484e2477ed611ce151f}\label{class_idioma_a23589aa5ba65f484e2477ed611ce151f}} 
+\index{Idioma@{Idioma}!buscacodi@{buscacodi}}
+\index{buscacodi@{buscacodi}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{buscacodi()}{buscacodi()}}
+{\footnotesize\ttfamily void Idioma\+::buscacodi (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del código de un carácter del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el código del carácter deseado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 130 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+130                                       \{
+131   map<string,string>::const\_iterator ite;
+132   ite = \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}.find(key);
+133   \textcolor{keywordflow}{if} (ite != \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}.end())\{
+134     cout << ite->first << \textcolor{stringliteral}{" "} << ite->second << endl;
+135   \}\textcolor{keywordflow}{else}\{
+136     cout << \textcolor{stringliteral}{"El idioma no existe o el caracter no esta en el idioma"} << endl;
+137   \}
+138 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a035524146301a918ba0c019b25c10263}\label{class_idioma_a035524146301a918ba0c019b25c10263}} 
+\index{Idioma@{Idioma}!codifica@{codifica}}
+\index{codifica@{codifica}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{codifica()}{codifica()}}
+{\footnotesize\ttfamily void Idioma\+::codifica (\begin{DoxyParamCaption}\item[{const string \&}]{text }\end{DoxyParamCaption}) const}
+
+
+
+Operación que codifica el texto introducido. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el texto era válido para codificar, se imprime el resultado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal 
+\end{DoxyParagraph}
+
+
+Definición en la línea 140 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+140                                               \{
+141   \textcolor{keywordtype}{string} result = \textcolor{stringliteral}{""}, b;
+142   \textcolor{keywordtype}{int} i = 0;
+143   \textcolor{keywordtype}{bool} noexiste = \textcolor{keyword}{false};
+144   map<string,string>::const\_iterator it;
+145   \textcolor{keywordflow}{while}(not noexiste and i < text.length())\{
+146     b = (text[i] < 0)? text.substr(i,2) : string(1,text[i]);
+147     it = \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}.find(b);
+148     \textcolor{keywordflow}{if} (it != \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}.end())\{
+149       result += it->second;
+150     \}\textcolor{keywordflow}{else}\{
+151       noexiste = \textcolor{keyword}{true};
+152     \}
+153     i += (text[i] < 0)? 2 : 1;
+154   \}
+155   \textcolor{keywordflow}{if} (noexiste) cout << \textcolor{stringliteral}{"El texto no pertenece al idioma; primer caracter que falla: "} << b << endl;
+156   \textcolor{keywordflow}{else} cout << result << endl;
+157 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a862b9fe26b8929a7d6b4af8a1373d0a0}\label{class_idioma_a862b9fe26b8929a7d6b4af8a1373d0a0}} 
+\index{Idioma@{Idioma}!tabla@{tabla}}
+\index{tabla@{tabla}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{tabla()}{tabla()}}
+{\footnotesize\ttfamily void Idioma\+::tabla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora de la tabla de frecuencias del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime por el canal de salida la tabla de frecuencias del parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal proporcional a la dimensión de la tabla 
+\end{DoxyParagraph}
+
+
+Definición en la línea 159 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+159                   \{
+160   \hyperlink{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}{taula}.\hyperlink{class_tab_freq_a20d75c460199ab8ef3e189d9ad81c05b}{print\_tab}();
+161 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a62777b96c5fcdbcf3fa9a5ebafe45988}\label{class_idioma_a62777b96c5fcdbcf3fa9a5ebafe45988}} 
+\index{Idioma@{Idioma}!print\+\_\+treecode@{print\+\_\+treecode}}
+\index{print\+\_\+treecode@{print\+\_\+treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{print\+\_\+treecode()}{print\_treecode()}}
+{\footnotesize\ttfamily void Idioma\+::print\+\_\+treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del treecode del idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha impreso el treecode en preorden e inorden 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal 
+\end{DoxyParagraph}
+
+
+Definición en la línea 163 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+163                            \{
+164   cout << \textcolor{stringliteral}{"recorrido en preorden:"} << endl;
+165   \hyperlink{class_idioma_aaf85e226b876366ea2cb1ebf5cf04388}{tree\_pre}(\hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode});
+166 
+167   cout << \textcolor{stringliteral}{"recorrido en inorden:"} << endl;
+168   \hyperlink{class_idioma_a1fdf7b5bae642b911ab51b100f56e55f}{tree\_in}(\hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode});
+169 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a2b615f7b30362bfc20e6319835017031}\label{class_idioma_a2b615f7b30362bfc20e6319835017031}} 
+\index{Idioma@{Idioma}!codigos@{codigos}}
+\index{codigos@{codigos}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{codigos()}{codigos()}}
+{\footnotesize\ttfamily void Idioma\+::codigos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura de los códigos del alfabeto del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por el canal de salida los códigos de todos los carácteres del parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal proporcional al número de códigos a imprimir 
+\end{DoxyParagraph}
+
+
+Definición en la línea 171 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+171                     \{
+172   \textcolor{keywordflow}{for}(map<string,string>::iterator it = \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}.begin(); it != \hyperlink{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}{lcodis}.end(); ++it)\{
+173     cout << it->first << \textcolor{stringliteral}{" "} << it->second << endl;
+174   \}
+175 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_aaf85e226b876366ea2cb1ebf5cf04388}\label{class_idioma_aaf85e226b876366ea2cb1ebf5cf04388}} 
+\index{Idioma@{Idioma}!tree\+\_\+pre@{tree\+\_\+pre}}
+\index{tree\+\_\+pre@{tree\+\_\+pre}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{tree\+\_\+pre()}{tree\_pre()}}
+{\footnotesize\ttfamily void Idioma\+::tree\+\_\+pre (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura en preorden del treecode de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime en preorden por el canal de salida el treecode del parámetro implícito. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo del mnúmero de nodos del treecode 
+\end{DoxyParagraph}
+
+
+Definición en la línea 177 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+177                                                        \{
+178   \textcolor{keywordflow}{if} (not a.empty())\{
+179     cout << a.value().first << \textcolor{stringliteral}{" "} << a.value().second << endl;
+180     \hyperlink{class_idioma_aaf85e226b876366ea2cb1ebf5cf04388}{tree\_pre}(a.left());
+181     \hyperlink{class_idioma_aaf85e226b876366ea2cb1ebf5cf04388}{tree\_pre}(a.right());
+182   \}
+183 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a1fdf7b5bae642b911ab51b100f56e55f}\label{class_idioma_a1fdf7b5bae642b911ab51b100f56e55f}} 
+\index{Idioma@{Idioma}!tree\+\_\+in@{tree\+\_\+in}}
+\index{tree\+\_\+in@{tree\+\_\+in}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{tree\+\_\+in()}{tree\_in()}}
+{\footnotesize\ttfamily void Idioma\+::tree\+\_\+in (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura en inorden del treecode del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime en inorden por el canal de salida el treecode del parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo del mnúmero de nodos del treecode 
+\end{DoxyParagraph}
+
+
+Definición en la línea 185 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+185                                                       \{
+186   \textcolor{keywordflow}{if}(not a.empty())\{
+187     \hyperlink{class_idioma_a1fdf7b5bae642b911ab51b100f56e55f}{tree\_in}(a.left());
+188     cout << a.value().first << \textcolor{stringliteral}{" "} << a.value().second << endl;
+189     \hyperlink{class_idioma_a1fdf7b5bae642b911ab51b100f56e55f}{tree\_in}(a.right());
+190   \}
+191 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a0a4599da90aef15aa798a63ee6ad820e}\label{class_idioma_a0a4599da90aef15aa798a63ee6ad820e}} 
+\index{Idioma@{Idioma}!lee\+\_\+idioma@{lee\+\_\+idioma}}
+\index{lee\+\_\+idioma@{lee\+\_\+idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{lee\+\_\+idioma()}{lee\_idioma()}}
+{\footnotesize\ttfamily void Idioma\+::lee\+\_\+idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto/em$>$ }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  EL parámetro implícito pasa a tener una tabla de frecuencias, un treecode y una lista códigos }
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+{\itshape  Lineal }
+\end{DoxyParagraph}
+
+
+Definición en la línea 193 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+193                        \{
+194     \textcolor{keywordtype}{int} num;
+195     cin >> num;
+196     \textcolor{keywordflow}{if} (num >= 2)\{
+197       \textcolor{keywordtype}{string} codis = \textcolor{stringliteral}{""};
+198       \hyperlink{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}{taula}.\hyperlink{class_tab_freq_aa84cb3ed7c4958be0bfe4fbd8c6c0e6a}{read\_tab}(num);
+199       set<BinTree<pair<string,int>>> s\_arbre = \hyperlink{class_idioma_aa4a86dd82c04a280b32d98c775cf5eda}{sethojas}(\hyperlink{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}{taula});
+200       \hyperlink{class_idioma_aa26f926dab1f528a879244f0a1c5f3e5}{create\_treecode}(s\_arbre);
+201       \hyperlink{class_idioma_a30aeaf1fc288edfcb09a00e47cad834a}{create\_codigos}(\hyperlink{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}{treecode},codis);
+202     \} \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"El número mínimo de carácteres es 2"} << endl;
+203   \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}\label{class_idioma_a5e144ffaa4c1c63690e08e4e2687a13f}} 
+\index{Idioma@{Idioma}!taula@{taula}}
+\index{taula@{taula}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{taula}{taula}}
+{\footnotesize\ttfamily \hyperlink{class_tab_freq}{Tab\+Freq} Idioma\+::taula\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tabla de frecuencias del parametro implícito. 
+
+
+
+Definición en la línea 28 del archivo idioma.\+hh.
+
+\mbox{\Hypertarget{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}\label{class_idioma_a5eeaf73b2498503c5c686ac259e1f675}} 
+\index{Idioma@{Idioma}!treecode@{treecode}}
+\index{treecode@{treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{treecode}{treecode}}
+{\footnotesize\ttfamily Bin\+Tree$<$pair$<$string,int$>$ $>$ Idioma\+::treecode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Treecode del parámetro implícito. 
+
+
+
+Definición en la línea 30 del archivo idioma.\+hh.
+
+\mbox{\Hypertarget{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}\label{class_idioma_ab908f7375f4506b26dd3cd163bc0b8cd}} 
+\index{Idioma@{Idioma}!lcodis@{lcodis}}
+\index{lcodis@{lcodis}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{lcodis}{lcodis}}
+{\footnotesize\ttfamily map$<$string,string$>$ Idioma\+::lcodis\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estructura para la lista de códigos de un idioma. 
+
+
+
+Definición en la línea 32 del archivo idioma.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{idioma_8hh}{idioma.\+hh}\item 
+\hyperlink{idioma_8cc}{idioma.\+cc}\end{DoxyCompactItemize}

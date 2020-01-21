@@ -1,0 +1,89 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal de la práctica.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal de la práctica. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 19 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+19            \{
+20   \textcolor{keywordtype}{int} NI; \textcolor{comment}{//NI es nombre de idiomes}
+21   \textcolor{keywordtype}{string} opcio;
+22   cin >> NI;
+23   \hyperlink{class_cjt__idiomas}{Cjt\_idiomas} c1;
+24   c1.\hyperlink{class_cjt__idiomas_a09e45083b9df57c02f05bda0bef3d0d3}{read\_conjunto}(NI);
+25   cin >> opcio;
+26   \textcolor{keywordflow}{while}(opcio != \textcolor{stringliteral}{"fin"})\{
+27     \textcolor{keywordflow}{if} (opcio == \textcolor{stringliteral}{"anadir/modificar"})\{
+28       \textcolor{keywordtype}{string} nomI;
+29       cin >> nomI;
+30       c1.\hyperlink{class_cjt__idiomas_a1e38b16ba4bb49a91589c85ec7775a5f}{afegir\_mod\_idioma}(nomI);
+31     \}
+32 
+33     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (opcio == \textcolor{stringliteral}{"codifica"})\{
+34       \textcolor{keywordtype}{string} text, nomI;
+35       cin >> nomI >> text;
+36       c1.\hyperlink{class_cjt__idiomas_af3724a3343435acc48397c555722ce2f}{codifica\_I}(nomI,text);
+37     \}
+38 
+39     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (opcio == \textcolor{stringliteral}{"decodifica"})\{
+40       \textcolor{keywordtype}{string} codi, nomI;
+41       cin >> nomI >> codi;
+42       c1.\hyperlink{class_cjt__idiomas_a99a44238cc4b83392ff1991ad1319c46}{decodifica\_I}(nomI,codi);
+43     \}
+44 
+45     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (opcio == \textcolor{stringliteral}{"tabla\_frec"})\{
+46       \textcolor{keywordtype}{string} nomI;
+47       cin >> nomI;
+48       c1.\hyperlink{class_cjt__idiomas_a9839ea44dc8c3ecbb10b32fe869a3498}{print\_taula}(nomI);
+49       \}
+50 
+51     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (opcio == \textcolor{stringliteral}{"treecode"})\{
+52       \textcolor{keywordtype}{string} nomI;
+53       cin >> nomI;
+54       c1.\hyperlink{class_cjt__idiomas_abcb2442285737fae69096a5e05b9a594}{print\_I\_treecode}(nomI);
+55     \}
+56 
+57     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (opcio == \textcolor{stringliteral}{"codigos"})\{
+58       \textcolor{keywordtype}{string} nomI, opcio2;
+59       cin >> nomI >> opcio2;
+60       \textcolor{keywordflow}{if} (opcio2 == \textcolor{stringliteral}{"todos"})
+61         c1.\hyperlink{class_cjt__idiomas_a0ac0bb2a2fe0cf4abd10d9366da9fa10}{print\_lista}(nomI);
+62       \textcolor{keywordflow}{else} c1.\hyperlink{class_cjt__idiomas_afb0c806ea9fb7422f10d7767ef101743}{print\_code\_op}(nomI,opcio2);
+63     \}
+64     cin >> opcio;
+65   \}
+66 \}
+\end{DoxyCode}

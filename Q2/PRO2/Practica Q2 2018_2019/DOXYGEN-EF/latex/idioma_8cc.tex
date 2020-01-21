@@ -1,0 +1,49 @@
+\hypertarget{idioma_8cc}{}\section{Referencia del Archivo idioma.\+cc}
+\label{idioma_8cc}\index{idioma.\+cc@{idioma.\+cc}}
+
+
+Implementación de la clase \hyperlink{idioma_8hh}{idioma.\+hh}.  
+
+
+Dependencia gráfica adjunta para idioma.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{idioma_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{idioma_8cc_ae4068cab7e1ad43a8d03f2f5d50e06df}{operator$<$} (const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&a, const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Implementación de la clase \hyperlink{idioma_8hh}{idioma.\+hh}. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{idioma_8cc_ae4068cab7e1ad43a8d03f2f5d50e06df}\label{idioma_8cc_ae4068cab7e1ad43a8d03f2f5d50e06df}} 
+\index{idioma.\+cc@{idioma.\+cc}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!idioma.\+cc@{idioma.\+cc}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{a,  }\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 208 del archivo idioma.\+cc.
+
+
+\begin{DoxyCode}
+208                                                                                        \{
+209   pair<string,int> p\_a = a.value();
+210   pair<string,int> p\_b = b.value();
+211 
+212   \textcolor{keywordflow}{if} (p\_a.second == p\_b.second)\{
+213     \textcolor{keywordflow}{return} (p\_a.first < p\_b.first);
+214   \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return} (p\_a.second < p\_b.second);
+215 \}
+\end{DoxyCode}

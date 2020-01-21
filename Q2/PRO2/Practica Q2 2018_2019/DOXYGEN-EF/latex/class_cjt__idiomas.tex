@@ -1,0 +1,427 @@
+\hypertarget{class_cjt__idiomas}{}\section{Referencia de la Clase Cjt\+\_\+idiomas}
+\label{class_cjt__idiomas}\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+
+
+Representa un conjunto de idiomas.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt__idiomas_acf95ab4c8f5fc442e3724a804658dd38}{Cjt\+\_\+idiomas} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_cjt__idiomas_acd4deb8546959ab728ce5c4bc717e800}{$\sim$\+Cjt\+\_\+idiomas} ()
+\begin{DoxyCompactList}\small\item\em Destructora por defecto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_a1e38b16ba4bb49a91589c85ec7775a5f}{afegir\+\_\+mod\+\_\+idioma} (string \&key)
+\begin{DoxyCompactList}\small\item\em Modificadora del conjunto de idiomas. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_af3724a3343435acc48397c555722ce2f}{codifica\+\_\+I} (string \&key, string \&text) const
+\begin{DoxyCompactList}\small\item\em Consultora de la codificación del texto introducido en un idioma contreto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_a99a44238cc4b83392ff1991ad1319c46}{decodifica\+\_\+I} (string \&key, string \&codi) const
+\begin{DoxyCompactList}\small\item\em Consultora de la decodificación del código introducido en un idioma concreto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_a9839ea44dc8c3ecbb10b32fe869a3498}{print\+\_\+taula} (string key)
+\begin{DoxyCompactList}\small\item\em Consultora de la tabla de frecuencias de un idioma del conjunto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_a0ac0bb2a2fe0cf4abd10d9366da9fa10}{print\+\_\+lista} (string key)
+\begin{DoxyCompactList}\small\item\em Consultora de la lista de códigos de un idioma del conjunto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_afb0c806ea9fb7422f10d7767ef101743}{print\+\_\+code\+\_\+op} (string key, string key2)
+\begin{DoxyCompactList}\small\item\em Consultora del código de un carácter de un idioma del conjunto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_abcb2442285737fae69096a5e05b9a594}{print\+\_\+\+I\+\_\+treecode} (string \&key)
+\begin{DoxyCompactList}\small\item\em Consultora del treecode de un idioma del conjunto. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__idiomas_a09e45083b9df57c02f05bda0bef3d0d3}{read\+\_\+conjunto} (int n)
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \hyperlink{class_idioma}{Idioma} $>$ \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{C\+J\+\_\+\+ID}
+\begin{DoxyCompactList}\small\item\em Estructura del conjunto de idiomas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un conjunto de idiomas. 
+
+Definición en la línea 17 del archivo Cjt\+\_\+idiomas.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt__idiomas_acf95ab4c8f5fc442e3724a804658dd38}\label{class_cjt__idiomas_acf95ab4c8f5fc442e3724a804658dd38}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{Cjt\+\_\+idiomas()}{Cjt\_idiomas()}}
+{\footnotesize\ttfamily Cjt\+\_\+idiomas\+::\+Cjt\+\_\+idiomas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un conjunto de idiomas. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Crea un conjunto de idiomas 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 9 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_acd4deb8546959ab728ce5c4bc717e800}\label{class_cjt__idiomas_acd4deb8546959ab728ce5c4bc717e800}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!````~Cjt\+\_\+idiomas@{$\sim$\+Cjt\+\_\+idiomas}}
+\index{````~Cjt\+\_\+idiomas@{$\sim$\+Cjt\+\_\+idiomas}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{$\sim$\+Cjt\+\_\+idiomas()}{~Cjt\_idiomas()}}
+{\footnotesize\ttfamily Cjt\+\_\+idiomas\+::$\sim$\+Cjt\+\_\+idiomas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora por defecto. 
+
+Se ejecuta automáticamente cuando el objeto local sale del ámbito de visibilidad \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El objeto local se ha borrado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 11 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+11 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt__idiomas_a1e38b16ba4bb49a91589c85ec7775a5f}\label{class_cjt__idiomas_a1e38b16ba4bb49a91589c85ec7775a5f}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!afegir\+\_\+mod\+\_\+idioma@{afegir\+\_\+mod\+\_\+idioma}}
+\index{afegir\+\_\+mod\+\_\+idioma@{afegir\+\_\+mod\+\_\+idioma}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{afegir\+\_\+mod\+\_\+idioma()}{afegir\_mod\_idioma()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::afegir\+\_\+mod\+\_\+idioma (\begin{DoxyParamCaption}\item[{string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Modificadora del conjunto de idiomas. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el parámetro implícito no contiene un idioma con el mismo nombre que el introducido, se añade. En caso contrario, se modifica el ya existente añadiendo nuevos elementos. Para ambos casos se trabaja el treecode adecuadamente. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo de la cantidad de elementos que contiene el nuevo idioma o la cantidad de elementos a añadir al ya existente 
+\end{DoxyParagraph}
+
+
+Definición en la línea 39 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+39                                                \{
+40   map<string,Idioma>::iterator it;
+41   \textcolor{keywordtype}{int} n;
+42   it = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+43   \textcolor{keywordflow}{if} (it != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+44     cin >> n;
+45     (*it).second.modificaridioma(n);
+46     cout << \textcolor{stringliteral}{"Modificado "} << key << endl;
+47   \}
+48   \textcolor{keywordflow}{else}\{
+49     \hyperlink{class_idioma}{Idioma} c;
+50     c.\hyperlink{class_idioma_a0a4599da90aef15aa798a63ee6ad820e}{lee\_idioma}();
+51     \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}[key] = c;
+52     cout << \textcolor{stringliteral}{"Anadido "} << key << endl;
+53   \}
+54   cout << endl;
+55 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_af3724a3343435acc48397c555722ce2f}\label{class_cjt__idiomas_af3724a3343435acc48397c555722ce2f}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!codifica\+\_\+I@{codifica\+\_\+I}}
+\index{codifica\+\_\+I@{codifica\+\_\+I}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{codifica\+\_\+\+I()}{codifica\_I()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::codifica\+\_\+I (\begin{DoxyParamCaption}\item[{string \&}]{key,  }\item[{string \&}]{text }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la codificación del texto introducido en un idioma contreto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se muestra el codigo del texto introducido y se muestra por el canal de salida 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo del tamaño del conjunto y del texto 
+\end{DoxyParagraph}
+
+
+Definición en la línea 13 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+13                                                            \{
+14   cout << \textcolor{stringliteral}{"Codifica en "} << key << \textcolor{stringliteral}{" el texto:"} << endl;
+15   cout << text << endl;
+16   map<string,Idioma>:: const\_iterator ite;
+17   ite = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+18   \textcolor{keywordflow}{if} (ite != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+19     ite->second.codifica(text);
+20    \}\textcolor{keywordflow}{else}\{
+21     cout << \textcolor{stringliteral}{"El idioma no existe"} << endl;
+22   \}
+23   cout << endl;
+24 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_a99a44238cc4b83392ff1991ad1319c46}\label{class_cjt__idiomas_a99a44238cc4b83392ff1991ad1319c46}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!decodifica\+\_\+I@{decodifica\+\_\+I}}
+\index{decodifica\+\_\+I@{decodifica\+\_\+I}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{decodifica\+\_\+\+I()}{decodifica\_I()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::decodifica\+\_\+I (\begin{DoxyParamCaption}\item[{string \&}]{key,  }\item[{string \&}]{codi }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la decodificación del código introducido en un idioma concreto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha decodificado el texto introducido y se muestra por el canal de salida 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo del tamaño del conjunto y del codigo 
+\end{DoxyParagraph}
+
+
+Definición en la línea 26 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+26                                                              \{
+27   cout << \textcolor{stringliteral}{"Decodifica en "} << key << \textcolor{stringliteral}{" el texto:"} << endl;
+28   cout << codi << endl;
+29   map<string,Idioma>:: const\_iterator ite;
+30   ite = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+31   \textcolor{keywordflow}{if} (ite != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+32     ite->second.ini\_decodifica(codi);
+33    \}\textcolor{keywordflow}{else}\{
+34     cout << \textcolor{stringliteral}{"El idioma no existe"} << endl;
+35   \}
+36   cout << endl;
+37 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_a9839ea44dc8c3ecbb10b32fe869a3498}\label{class_cjt__idiomas_a9839ea44dc8c3ecbb10b32fe869a3498}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!print\+\_\+taula@{print\+\_\+taula}}
+\index{print\+\_\+taula@{print\+\_\+taula}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{print\+\_\+taula()}{print\_taula()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::print\+\_\+taula (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})}
+
+
+
+Consultora de la tabla de frecuencias de un idioma del conjunto. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito no esta vacío y hay un string preparado para encontrar el idioma deseado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha impreso el contenido de la tabla de frecuencias del idioma deseado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 57 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+57                                        \{
+58   map<string,Idioma>::iterator it;
+59   it = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+60   cout << \textcolor{stringliteral}{"Tabla de frecuencias de "} << key << \textcolor{stringliteral}{":"} << endl;
+61   \textcolor{keywordflow}{if} (it != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+62     (*it).second.tabla();
+63   \}\textcolor{keywordflow}{else}\{
+64     cout << \textcolor{stringliteral}{"El idioma no existe"} << endl;
+65   \}
+66   cout << endl;
+67 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_a0ac0bb2a2fe0cf4abd10d9366da9fa10}\label{class_cjt__idiomas_a0ac0bb2a2fe0cf4abd10d9366da9fa10}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!print\+\_\+lista@{print\+\_\+lista}}
+\index{print\+\_\+lista@{print\+\_\+lista}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{print\+\_\+lista()}{print\_lista()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::print\+\_\+lista (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})}
+
+
+
+Consultora de la lista de códigos de un idioma del conjunto. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito no esta vacío y hay un string preparado para encontrar el idioma deseado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha impreso la lista de codigos del idioma deseado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 69 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+69                                        \{
+70   map<string,Idioma>::iterator it;
+71   it = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+72   cout << \textcolor{stringliteral}{"Codigos de "} << key << \textcolor{stringliteral}{":"} << endl;
+73   \textcolor{keywordflow}{if} (it != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+74     (*it).second.codigos();
+75   \}\textcolor{keywordflow}{else}\{
+76      cout << \textcolor{stringliteral}{"El idioma no existe"} << endl;
+77    \}
+78    cout << endl;
+79 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_afb0c806ea9fb7422f10d7767ef101743}\label{class_cjt__idiomas_afb0c806ea9fb7422f10d7767ef101743}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!print\+\_\+code\+\_\+op@{print\+\_\+code\+\_\+op}}
+\index{print\+\_\+code\+\_\+op@{print\+\_\+code\+\_\+op}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{print\+\_\+code\+\_\+op()}{print\_code\_op()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::print\+\_\+code\+\_\+op (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{string}]{key2 }\end{DoxyParamCaption})}
+
+
+
+Consultora del código de un carácter de un idioma del conjunto. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito no esta vacío y hay dos string preparados para encontrar el idioma y carácter deseados 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha impreso el código del carácter deseado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 81 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+81                                                       \{
+82   map<string,Idioma>::const\_iterator ite;
+83   ite = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+84   cout << \textcolor{stringliteral}{"Codigo de "} << key2 << \textcolor{stringliteral}{" en "} << key << \textcolor{stringliteral}{":"} << endl;
+85   \textcolor{keywordflow}{if} (ite != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+86     ite->second.buscacodi(key2);
+87   \}\textcolor{keywordflow}{else}\{
+88     cout << \textcolor{stringliteral}{"El idioma no existe o el caracter no esta en el idioma"} << endl;
+89   \}
+90   cout << endl;
+91 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_abcb2442285737fae69096a5e05b9a594}\label{class_cjt__idiomas_abcb2442285737fae69096a5e05b9a594}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!print\+\_\+\+I\+\_\+treecode@{print\+\_\+\+I\+\_\+treecode}}
+\index{print\+\_\+\+I\+\_\+treecode@{print\+\_\+\+I\+\_\+treecode}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{print\+\_\+\+I\+\_\+treecode()}{print\_I\_treecode()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::print\+\_\+\+I\+\_\+treecode (\begin{DoxyParamCaption}\item[{string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Consultora del treecode de un idioma del conjunto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha impreso el treecode del idioma deseado 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 93 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+93                                              \{
+94   map<string,Idioma>::iterator it;
+95   it = \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.find(key);
+96   cout << \textcolor{stringliteral}{"Treecode de "} << key << \textcolor{stringliteral}{":"} << endl;
+97   \textcolor{keywordflow}{if} (it != \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}.end())\{
+98     (*it).second.print\_treecode();
+99   \} \textcolor{keywordflow}{else} \{
+100     cout << \textcolor{stringliteral}{"El idioma no existe"} << endl;
+101   \}
+102   cout << endl;
+103 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__idiomas_a09e45083b9df57c02f05bda0bef3d0d3}\label{class_cjt__idiomas_a09e45083b9df57c02f05bda0bef3d0d3}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!read\+\_\+conjunto@{read\+\_\+conjunto}}
+\index{read\+\_\+conjunto@{read\+\_\+conjunto}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{read\+\_\+conjunto()}{read\_conjunto()}}
+{\footnotesize\ttfamily void Cjt\+\_\+idiomas\+::read\+\_\+conjunto (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se guardan los datos introducidos en el parámetro implícito 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo de cuantos idiomas se quieran leer 
+\end{DoxyParagraph}
+
+
+Definición en la línea 105 del archivo Cjt\+\_\+idiomas.\+cc.
+
+
+\begin{DoxyCode}
+105                                     \{
+106   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < n; i++)\{
+107     \textcolor{keywordtype}{string} b;
+108     cin >> b;
+109     \hyperlink{class_idioma}{Idioma} a;
+110     a.\hyperlink{class_idioma_a0a4599da90aef15aa798a63ee6ad820e}{lee\_idioma}();
+111     \hyperlink{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}{CJ\_ID}[b] = a;
+112   \}
+113 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}\label{class_cjt__idiomas_aeb67a7100b1345a160fb85466bd4e5f6}} 
+\index{Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}!C\+J\+\_\+\+ID@{C\+J\+\_\+\+ID}}
+\index{C\+J\+\_\+\+ID@{C\+J\+\_\+\+ID}!Cjt\+\_\+idiomas@{Cjt\+\_\+idiomas}}
+\subsubsection{\texorpdfstring{C\+J\+\_\+\+ID}{CJ\_ID}}
+{\footnotesize\ttfamily map$<$string,\hyperlink{class_idioma}{Idioma}$>$ Cjt\+\_\+idiomas\+::\+C\+J\+\_\+\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estructura del conjunto de idiomas. 
+
+
+
+Definición en la línea 21 del archivo Cjt\+\_\+idiomas.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__idiomas_8hh}{Cjt\+\_\+idiomas.\+hh}\item 
+\hyperlink{_cjt__idiomas_8cc}{Cjt\+\_\+idiomas.\+cc}\end{DoxyCompactItemize}
